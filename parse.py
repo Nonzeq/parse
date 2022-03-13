@@ -1,4 +1,5 @@
 #!/home/bogdan/parse/venv/bin/python
+# -*- coding: utf-8 -*-
 
 import requests
 from bs4 import BeautifulSoup
@@ -18,6 +19,8 @@ def get_dollar(html):
 def message(msg):
     title = 'Долар США'
     os.system('notify-send "{}" "{}"'.format(title, msg))
+    #print(f'{title}, {msg}')
+
 
 
 def main():
